@@ -12,3 +12,54 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;}
 html,body{height: 100%; width: 100%; font-size: 100%; line-height: 1;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; font-size: 16px; color:#000}
 /*---*/
+body{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+h1{
+	margin: 20px;
+	font-size: 30px;
+	font-weight: 700;
+}
+.accord__item{
+	position: relative;
+	margin: 0 auto;
+	border-top: 1px solid #dbdbdb;
+	/* background-color: #ff80ff; */
+}
+.accord__input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.accord__input:checked ~ .accord__label{
+	background-color: #eee;
+}
+.accord__input:checked ~ .accord__content{
+	display: block;
+	max-height: 300px;
+	background-color: #eee;
+}
+.accord__input:checked ~ .accord__content img{
+	/* background-color: #b27be6; */
+	padding: 10px;
+
+}
+
+.accord__label{
+	display: block;
+	padding: 10px;
+}
+.accord__content{
+	display: none;
+}
+.accord__content img{
+	display: block;
+	max-height: 300px;
+	margin: 0 auto;
+}
